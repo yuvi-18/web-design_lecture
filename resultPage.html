@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Google Search Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            color: #4285f4;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .search-box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+        .search-box input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+        .search-box input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #4285f4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .search-box input[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+        .result {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .result h2 {
+            margin: 0;
+            font-size: 18px;
+            color: #1a0dab;
+        }
+        .result a {
+            text-decoration: none;
+            color: #1a0dab;
+        }
+        .result a:hover {
+            text-decoration: underline;
+        }
+        .result p {
+            color: #70757a;
+            margin: 5px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            color: #70757a;
+            font-size: 14px;
+        }
+        .search-info {
+            font-size: 14px;
+            color: #70757a;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Google Search</h1>
+        
+        <form class="search-box" action="https://www.google.com/search" method="get">
+            <input type="text" name="q" placeholder="Search Google..." required>
+            <input type="submit" value="Search">
+        </form>
+
+        <div class="search-info">About 123,000 results (0.45 seconds)</div>
+
+        <div class="result">
+            <h2><a href="#">Example Result 1</a></h2>
+            <p>https://www.example1.com</p>
+            <p>This is a description of the first search result. It provides a brief overview of the content found at this link.</p>
+        </div>
+        <div class="result">
+            <h2><a href="#">Example Result 2</a></h2>
+            <p>https://www.example2.com</p>
+            <p>This is a description of the second search result. More details about the content can be included here.</p>
+        </div>
+        <div class="result">
+            <h2><a href="#">Example Result 3</a></h2>
+            <p>https://www.example3.com</p>
+            <p>This is a description of the third search result. It summarizes what users can expect if they click the link.</p>
+        </div>
+
+        <div class="footer">
+            <p>Your search terms</p>
+        </div>
+    </div>
+
+</body>
+</html>
